@@ -11,7 +11,7 @@ const Hypotenuse = () => {
       Math.pow(
         Number(base) * Number(base) + Number(height) * Number(height),
         0.5
-      )
+      ).toFixed(6)
     );
   };
   return (
