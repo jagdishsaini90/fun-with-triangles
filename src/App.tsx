@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Header from "./Components/Header";
+import Area from "./Pages/Area";
+import Hypotenuse from "./Pages/Hypotenuse";
+import IsTraingle from "./Pages/isTriangle";
+import Quiz from "./Pages/Quiz";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Switch>
+        <Route path="/istriangle" component={IsTraingle} />
+        <Route path="/hypo" component={Hypotenuse} />
+        <Route path="/area" component={Area} />
+        <Route path="/" component={Quiz} />
+        <Redirect to="/" />
+      </Switch>
+    </>
   );
 }
 

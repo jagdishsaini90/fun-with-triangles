@@ -1,0 +1,147 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: url("../quiz.jpg");
+  background-position: top top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 83vh;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 20%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 40%;
+  }
+  .app {
+    min-height: 90vh;
+  }
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.triangle,
+.hypotenuse {
+  min-width: 100vw;
+  min-height: 83vh;
+  text-align: center;
+  padding-top: 20px;
+  background: url("../tri.jpg");
+  background-position: top top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+}
+
+.triangle__input {
+  width: 30vw;
+  height: 7vh;
+  border: 2px solid slateblue;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  padding-left: 20px;
+}
+.triangle__input:focus {
+  outline: 2px solid slateblue;
+  border-radius: 10px;
+}
+.triangle__button {
+  display: flex;
+  justify-content: center;
+}
+.butttton,
+.butttton1,
+.butttton2 {
+  background: slateblue;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  padding-left: 90px;
+}
+.butttton:hover {
+  background: steelblue;
+}
+.hypotenuse {
+  background-image: none;
+}
+.butttton1 {
+  padding-left: 65px;
+}
+.butttton2 {
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .triangle__input {
+    width: 70vw;
+  }
+  .butttton2 {
+    padding-left: 40px;
+  }
+  .butttton1 {
+    padding-left: 20px;
+  }
+  .butttton {
+    padding-left: 30px;
+  }
+}

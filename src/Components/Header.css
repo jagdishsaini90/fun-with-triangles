@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: steelblue;
+  height: 17vh;
+  width: 100vw;
+  box-shadow: 5px 5px 5px steelblue;
+}
+.title {
+  font-size: 3rem;
+  font-family: "Akronim", cursive;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0 0 20px;
+  text-shadow: 5px 5px 5px grey;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+}
+li:hover {
+  color: greenyellow;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 0 0 0 10px;
+  }
+  ul {
+    margin-top: 0;
+    margin-left: 10px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
